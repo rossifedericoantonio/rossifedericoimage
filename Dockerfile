@@ -10,12 +10,10 @@ RUN pip install numpy
 # Installazione librerie Python per Flask e LangChain
 RUN pip install --no-cache-dir \
     flask \
-    langchain \
-    langchain-community \
-    langchain-core \
-    langchain-ollama \
-    langgraph
-## --------------------------- ##
-
+    "langchain-core>=0.3.0" \
+    "langchain-ollama>=0.2.0" \
+    "langchain-community" \
+    "langgraph>=0.2.0" \
+    "typing-extensions>=4.10.0"
 # DO NOT EDIT USER VALUE
 USER jovyan
